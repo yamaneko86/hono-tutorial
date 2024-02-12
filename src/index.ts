@@ -1,11 +1,11 @@
 import { Hono } from "hono";
-import login from "./api/login";
+import todos from "./todos/todos";
 
 const app = new Hono();
 
-app.route("/login", login);
+app.route("/todos", todos);
 
-app.get("/hello", (context) => {
+app.get("/", (context) => {
   return context.json({
     message: "Hello! Hono🔥",
   });
