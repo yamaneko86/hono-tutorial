@@ -1,9 +1,10 @@
 import { Hono } from "hono";
 
 let todoList = [
-  { id: "1", title: "Leaning Programming.", completed: false },
+  { id: "1", title: "Learn Programming.", completed: false },
   { id: "2", title: "Watch Netflix.", completed: false },
   { id: "3", title: "Go shopping.", completed: false },
+  { id: "4", title: "Play Game.", completed: false },
 ];
 
 const app = new Hono();
